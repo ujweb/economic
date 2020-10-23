@@ -1,0 +1,14 @@
+a.btn, button.btn {
+    display: block;
+    color: $white;
+    padding: 10px 20px;
+    line-height: 2.4rem;
+    background-color: transparent;
+    border: 1px solid $white;
+    outline: 0;
+    @include transition(color 0.3s, border-color 0.3s);
+    &:hover {
+        color: $yellow;
+        border-color: $yellow;
+    }
+}

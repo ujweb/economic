@@ -1,0 +1,50 @@
+@import "_mixins";
+@import "_variable";
+@import "_general";
+@import "_space";
+// @import "_icon";
+@import "_font";
+@import "_container";
+@import "_header";
+@import "_footer";
+@import "_model";
+section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	@include breakpoint(768px) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	&.question {
+		.container {
+			padding-top: 80px;
+			padding-bottom: 80px;
+			font-size: 0;
+			text-align: center;
+			+ .container {
+				border-top: 1px solid rgba($white, 0.2);
+			}
+		}
+		h6 {
+			display: table;
+			color: $yellow;
+			margin-left: auto;
+			margin-right: auto;
+			line-height: 3rem;
+			border-bottom: 2px solid $yellow;
+		}
+		h4 {
+			color: $white;
+		}
+		button {
+			display: inline-block;
+			min-width: 170px;
+			vertical-align: middle;
+			+ button {
+				margin-left: 2rem;
+			}
+		}
+	}
+}
+@import "_opening";
+@import "_button";

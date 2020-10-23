@@ -1,0 +1,16 @@
+$h-size: 4.4rem, 4rem, 3.2rem, 2.4rem, 1.8rem, 1.6rem;
+@for $i from 1 through 6 {
+	h#{$i}, .h#{$i} {
+		font-size: nth($h-size, $i);
+	}
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	@include breakpoint(768px) {
+		font-weight: 500;
+	}
+}
