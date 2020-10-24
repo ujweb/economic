@@ -1,0 +1,89 @@
+.card-group {
+	@include breakpoint(768px) {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.card {
+		display: block;
+		width: 100%;
+		color: $white;
+		text-align: left;
+		@include breakpoint(768px) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&:nth-child(4n+1) {
+			margin-left: 0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			background-color: $white;
+			@include transition(opacity 0.3s);
+		}
+		&:hover {
+			color: $yellow;
+			img {
+				@include opacity(0.7);
+			}
+		}
+	}
+}
+.img-card-list {
+	font-size: 0;
+	.img-card {
+		position: relative;
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 20px;
+		padding: 40px;
+		overflow: hidden;
+		@media screen and (max-width: 559px) {
+			width: 100%;
+			margin-left: 0;
+		}
+		@media screen and (min-width: 560px) and (max-width: 1023px) {
+			width: calc((100% - 20px) / 2);
+			&:nth-child(2n+1) {
+				margin-left: 0;
+			}
+		}
+		@include breakpoint(1024px) {
+			width: calc((100% - 40px) / 3);
+			&:nth-child(3n+1) {
+				margin-left: 0;
+			}
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -2;
+		}
+		&::before {
+			@include beforeafter('', block);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: $black;
+			@include opacity(0.7);
+			z-index: -1;
+		}
+		h3 {
+			color: $white;
+			line-height: 4rem;
+			&::after {
+				@include beforeafter('', block);
+				width: 50px;
+				height: 2px;
+				margin: 10px auto 5px;
+				background-color: $yellow;
+			}
+		}
+	}
+}

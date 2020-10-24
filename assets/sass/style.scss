@@ -7,7 +7,7 @@
 @import "_container";
 @import "_header";
 @import "_footer";
-@import "_model";
+@import "_modal";
 section {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -33,18 +33,187 @@ section {
 			line-height: 3rem;
 			border-bottom: 2px solid $yellow;
 		}
-		h4 {
+		h2, .h3, h4, .h5, .h5 {
 			color: $white;
 		}
-		button {
-			display: inline-block;
-			min-width: 170px;
-			vertical-align: middle;
-			+ button {
-				margin-left: 2rem;
+		.h3 {
+			.h1 {
+				color: $yellow;
 			}
+			@include breakpoint(max-width 1023px) {
+				font-size: 2.4rem;
+			}	
+		}
+		h2 + .h5 {
+			@include opacity(0.6);
+		}
+		.option {
+			button {
+				margin-bottom: 0;
+				vertical-align: middle;
+				@include breakpoint(max-width 413px) {
+					width: 100%;
+				}
+				+ button {
+					margin-left: 2rem;
+					@include breakpoint(max-width 413px) {
+						margin-top: 1.6rem;
+						margin-left: 0;
+					}
+				}
+			}
+			&.option-list {
+				@include breakpoint(max-width 767px) {
+					button {
+						width: 100%;
+						margin-bottom: 0;
+						+ button {
+							margin-top: 1.6rem;
+							margin-left: 0;
+						}
+					}
+				}	
+			}
+		}
+	}
+	&.keywords {
+		h1, h5 {
+			color: $white;
+		}
+		h5 {
+			@include opacity(0.6);
 		}
 	}
 }
 @import "_opening";
 @import "_button";
+@import "_card";
+@import "_slider";
+@import "_loader";
+.bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-decoration: underline;
+	background-color: $yellow;
+	@include transition(background-color 0.3s);
+	cursor: pointer;
+	&:hover {
+		background-color: $yellow-light;
+	}
+}
+.form {
+	input {
+		border: 1px solid $black;
+		@include border-radius(0);
+		outline: 0;
+		&[type='text'], &[type='tel'], &[type='email'] {
+			width: 100%;
+			margin-bottom: 10px;
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 1.6rem;
+			line-height: 4.5rem;
+		}
+		&.submit {
+			display: block;
+			width: 100%;
+			color: $white;
+			font-size: 1.4rem;
+			line-height: 4.5rem;
+			background-color: $black;
+			@include transition(opacity 0.3s);
+		}
+	}
+	label.check {
+		display: block;
+		position: relative;
+		font-size: 0;
+		cursor: pointer;
+		span {
+			display: inline-block;
+			vertical-align: top;
+			line-height: 1.25;
+			@include transition(all 0.3s);
+			&.checkbox__txt {
+				width: calc(100% - 20px);
+				padding-left: 10px;
+				font-size: 1.2rem;
+			}
+			&.checkbox__mark {
+				position: relative;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background-color: transparent;
+				border: 1px solid $black;
+				&::after {
+					@include beforeafter('', none);
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 5px;
+					height: 10px;
+					border: solid $black;
+					border-width: 0 1px 1px 0;
+					@include transform(translate(-50%, -60%) rotate(45deg));
+				}
+			}
+		}
+		input {
+			position: absolute;
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			cursor: pointer;
+			&:checked {
+				~ span.checkbox__mark {
+					border-color: $yellow;
+					background-color: $yellow;
+					&::after {
+						display: block;
+					}
+				}
+			}
+		}
+		&:hover, &.active {
+			input {
+				~ span.checkbox__mark {
+					border-color: $yellow;
+				}
+			}
+		}
+	}
+}
+.cover-group {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	font-size: 0;
+	background-image: linear-gradient(236deg, #363636, #575757 50%, #282828);
+	@include breakpoint(414px) {
+		padding: 40px;
+	}	
+	a {
+		display: inline-block;
+		width: calc((100% - 30px) / 2);
+		@include breakpoint(414px) {
+			width: 125px;
+		}
+		+ a {
+			margin-left: 30px;
+			@include breakpoint(414px) {
+				margin-left: 40px;
+			}	
+		}
+		img {
+			width: 100%;
+			@include box-shadow(4px 4px 6px rgba($black, 0.25));
+		}
+	}
+}

@@ -1,15 +1,19 @@
 section.opening {
+    position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: calc(100vh - 80px);
+	overflow: hidden;
 	h1 {
         position: relative;
 		display: table;
-        max-width: 825px;
-        width: 100%;
+        width: 84%;
         margin-left: auto;
 		margin-right: auto;
+		@include breakpoint(1024px) {
+			max-width: 825px;
+		}
 		img {
 			display: block;
 			&.year {
@@ -24,25 +28,123 @@ section.opening {
 					}
 				}
 			}
-			&.series {
-                position: absolute;
-                top: 51%;
-                left: 30.4%;
-                width: 14.580802%;
-                @include translateY(-50%);
+		}
+		.series {
+			position: absolute;
+			overflow: hidden;
+			img {
+				width: 100%;
+				@include animation(series 7s infinite forwards linear);
+			}
+			@media screen and (orientation: portrait) {
+				top: 5.5%;
+				left: 59.5%;
+				width: 32%;
+			}
+			@media screen and (orientation: landscape) {
+				top: 51%;
+				left: 30.4%;
+				width: 14.580802%;
+				@include translateY(-50%);
 			}
 		}
 	}
 	h3 {
-        max-width: 825px;
         width: 100%;
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding: 15px;
 		margin-left: auto;
 		margin-right: auto;
 		color: $yellow;
 		line-height: 1;
 		background-color: $black;
 		text-align: center;
+		@include breakpoint(1024px) {
+			max-width: 825px;
+		}
+		@include breakpoint(max-width 1023px) {
+			font-size: 1.8rem;
+		}
+	}
+	.container {
+		position: relative;
+		padding-bottom: 40px;
+		z-index: 1;
+	}
+	.keyword {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		@include list(0 -8rem, 0, none);
+		font-size: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0.8rem 1rem;
+			color: $white;
+			font-size: 1.6rem;
+			@include opacity(0.2);
+			&.active {
+				color: $yellow;
+				font-size: 2.4rem;
+				@include opacity(0.4);
+				overflow: hidden;
+				span {
+					position: relative;
+					@include animation(keyid 4s infinite forwards linear);
+				}
+			}
+		}
+	}
+}
+@include keyframes(keyid) {
+	0% {
+		left: 0;
+	}
+	34% {
+		left: 0;
+	}
+	36% {
+		left: 100%;
+	}
+	50% {
+		right: 100%;
+	}
+	84% {
+		right: 100%;
+	}
+	86% {
+		right: 0;
+	}
+	100% {
+		right: 0;
+	}
+}
+@include keyframes(series) {
+	0% {
+		@include translateY(0);
+	}
+	39% {
+		@include translateY(0);
+	}
+	41% {
+		@include translateY(100%);
+	}
+	49.9% {
+		@include translateY(100%);
+	}
+	50% {
+		@include translateY(-100%);
+	}
+	57% {
+		@include translateY(-100%);
+	}
+	59% {
+		@include translateY(0);
+	}
+	100% {
+		@include translateY(0);
 	}
 }

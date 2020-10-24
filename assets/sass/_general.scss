@@ -66,7 +66,6 @@ body {
     background-color: $dark;
     @include breakpoint(1024px) {
         font-family: 'Roboto', 'Noto Sans TC', '思源黑體 TC', '思源黑體 TW', '思源黑體', '微軟正黑體', '繁黑體', 'Microsoft JhengHei', 'Lato', 'Arial', 'Segoe UI Emoji', 'Segoe UI Symbol', '新細明體', sans-serif;
-        letter-spacing: 0.025rem;
         font-display: swap;
     }
 }
@@ -91,4 +90,8 @@ img {
 .clearfix::after {
     display: table;
     clear: both;
+}
+
+.text-center {
+    text-align: center;
 }

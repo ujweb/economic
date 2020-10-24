@@ -1,0 +1,25 @@
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    @include translateY(-50%);
+    svg {
+        width: 20px;
+        path {
+            fill: $white;
+        }
+    }
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-slider {
+    padding-left: 50px;
+    padding-right: 50px;
+}

@@ -1,14 +1,36 @@
 a.btn, button.btn {
-    display: block;
-    color: $white;
+    display: inline-block;
+    min-width: 170px;
     padding: 10px 20px;
     line-height: 2.4rem;
-    background-color: transparent;
-    border: 1px solid $white;
     outline: 0;
-    @include transition(color 0.3s, border-color 0.3s);
-    &:hover {
-        color: $yellow;
-        border-color: $yellow;
+    @include transition(color 0.3s, background-color 0.3s, border-color 0.3s);
+    &.btn--outlined {
+        color: $white;
+        background-color: transparent;
+        border: 1px solid $white;
+        &:hover {
+            color: $yellow;
+            border-color: $yellow;
+        }
+    }
+    &.btn--contained {
+        color: $black;
+        background-color: $yellow;
+        border: 1px solid $yellow;
+        &:hover {
+            background-color: $yellow-light;
+            border-color: $yellow-light;
+        }
+    }
+    &.btn--white {
+        color: $white;
+        background-color: rgba($white, 0.1);
+        border: 1px solid $white;
+        &:hover {
+            color: $yellow;
+            background-color: rgba($yellow, 0.1);
+            border-color: $yellow;
+        }
     }
 }
