@@ -1869,8 +1869,16 @@ section.question h2 + .h5 {
   opacity: 0.6;
 }
 section.question .option button {
+  position: relative;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0;
   vertical-align: middle;
+}
+@media (min-width: 414px) {
+  section.question .option button {
+    display: inline-flex;
+  }
 }
 @media (max-width: 413px) {
   section.question .option button {
@@ -1885,6 +1893,64 @@ section.question .option button + button {
     margin-top: 1.6rem;
     margin-left: 0;
   }
+}
+section.question .option button span {
+  display: block;
+}
+section.question .option button span.percentage {
+  display: none;
+  margin-left: 20px;
+}
+section.question .option button span.percentage-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+  opacity: 0.1;
+  -moz-transition: width 0.3s;
+  -o-transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+  z-index: -1;
+}
+section.question .option button.selected {
+  border: 1px solid #ffc800;
+}
+section.question .option button.selected span {
+  color: #ffc800;
+}
+section.question .option button.selected span.percentage-bar {
+  background-color: #ffc800;
+}
+section.question .option.done {
+  position: relative;
+}
+section.question .option.done::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: not-allowed;
+}
+section.question .option.done button {
+  justify-content: space-between;
+}
+section.question .option.done button:hover {
+  color: #fff;
+  border-color: #fff;
+}
+section.question .option.done button.selected:hover {
+  color: #ffc800;
+  border-color: #ffc800;
+}
+section.question .option.done button span.percentage {
+  display: block;
 }
 @media (max-width: 767px) {
   section.question .option.option-list button {
