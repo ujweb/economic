@@ -2047,6 +2047,9 @@ section.opening {
   align-items: center;
   justify-content: center;
   height: calc(100vh - 80px);
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   overflow: hidden;
   z-index: 0;
 }
