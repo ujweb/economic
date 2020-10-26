@@ -3,12 +3,14 @@ section.opening {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: calc(100vh - 80px);
-	height: -webkit-min-content;
-	height: -moz-min-content;
-	height: min-content;
+	min-height: calc(100vh - 80px);
+	height: 100%;
 	overflow: hidden;
 	z-index: 0;
+	@include breakpoint(max-width 1023px) {
+		min-height: calc(100vh - 100px);
+		height: 100%;
+	}
 	h1 {
         position: relative;
 		display: table;

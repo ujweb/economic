@@ -2046,12 +2046,16 @@ section.opening {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 80px);
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  min-height: calc(100vh - 80px);
+  height: 100%;
   overflow: hidden;
   z-index: 0;
+}
+@media (max-width: 1023px) {
+  section.opening {
+    min-height: calc(100vh - 100px);
+    height: 100%;
+  }
 }
 section.opening h1 {
   position: relative;
