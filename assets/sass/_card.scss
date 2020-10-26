@@ -1,8 +1,4 @@
 .card-group {
-	@include breakpoint(768px) {
-		margin-left: -10px;
-		margin-right: -10px;
-	}
 	.card {
 		display: block;
 		width: 100%;
