@@ -4,7 +4,7 @@ $(document).ready(function () {
             scoreStatus = true,
             opt11 = parseInt(rows[7]['gs$cell']['$t']),
             opt12 = parseInt(rows[8]['gs$cell']['$t']),
-            opt1 = parseInt(rows[8]['gs$cell']['$t']),
+            opt1 = parseInt(rows[9]['gs$cell']['$t']),
             opt21 = parseInt(rows[11]['gs$cell']['$t']),
             opt22 = parseInt(rows[12]['gs$cell']['$t']),
             opt23 = parseInt(rows[13]['gs$cell']['$t']),
