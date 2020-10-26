@@ -44,6 +44,8 @@ $(document).ready(function () {
             }
             // 呼叫 send ajax function
             send(data);
+        } else {
+            $('.loading').fadeOut();
         }
     });
 });
