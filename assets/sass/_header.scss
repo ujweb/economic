@@ -13,7 +13,7 @@ header {
 		position: relative;
 		display: flex;
 		align-items: center;
-		@include breakpoint(768px) {
+		@include breakpoint(970px) {
 			justify-content: space-between;
 		}	
 	}
@@ -43,8 +43,8 @@ header {
 	width: 25px;
 	height: 25px;
 	cursor: pointer;
-	z-index: 1;
-	@include breakpoint(768px) {
+	z-index: 2;
+	@include breakpoint(970px) {
 		display: none;
 	}
 	span {
@@ -77,21 +77,66 @@ header {
 	}
 }
 nav {
-	@include breakpoint(max-width 767px) {
-		display: none;
+	@include breakpoint(max-width 969px) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		min-width: 200px;
+		padding-top: 75px;
+		background-color: $black;
+		@include translateX(-100%);
+		@include transition(transform 0.3s);
+		z-index: 1;
+	}
+	&.active {
+		@include translateX(0%);
 	}
 	ul {
 		@include list(0, 0, none);
 		font-size: 0;
 		li {
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: 3rem;
+			@include breakpoint(970px) {
+				display: inline-block;
+				margin-left: 2rem;
+				vertical-align: middle;
+			}
+			@include breakpoint(1024px) {
+				margin-left: 3rem;
+			}
+			@include breakpoint(max-width 969px) {
+				display: block;
+				padding: 5px 20px;
+			}
 			a {
+				position: relative;
 				color: $white;
 				font-size: 1.6rem;
+				@include breakpoint(max-width 969px) {
+					padding: 15px 0;
+				}
 				&:hover {
 					color: $yellow;
+				}
+				&.tbc{
+					@include opacity(0.5);
+					cursor: not-allowed;
+					@include transition(opacity 0.3s);
+					&:hover {
+						color: $white;
+						@include opacity(0.75);
+					}
+					&::after {
+						@include beforeafter('敬請期待', block);
+						color: $white;
+						font-size: 1.2rem;
+						@include breakpoint(970px) {
+							position: absolute;
+							top: 100%;
+							left: 50%;
+							@include translateX(-50%);
+						}
+					}
 				}
 			}
 		}

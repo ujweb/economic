@@ -4,6 +4,7 @@ $(document).ready(function () {
 		headerHeight = $('header').outerHeight();
 	$(".hamburger").click(function () {
 		$(".hamburger, nav").toggleClass("active");
+		$('body').toggleClass('modal-open');
 	});
 	// Smooth scrolling using jQuery easing
 	$('a.smooth-scroll[href*="#"]:not([href="#"])').click(function () {
