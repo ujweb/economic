@@ -75,7 +75,7 @@ $(document).ready(function () {
 	}
 	function random() {
 		var keys = '',
-			keywords = ['超低利率', '顏值經濟', '未來城市', '美國大選', '數位金融', '場景革命', '零接觸商機', 'AIOT', '未來高教', '戀家經濟', '5G', '電動車'];
+			keywords = ['未來建築', '智慧聚落', '水資源', '低利對策', '智慧運輸', '循環設計', '數位轉型', '智慧醫療', '顏值經濟', '宅經濟', '電動車', '數位金融'];
 		for (let loop = 0; loop < 120; loop++) {
 			for (let i = 0; i < shuffle(keywords).length; i++) {
 				keys += '<li><span>' + shuffle(keywords)[i] + '</span></li>';
