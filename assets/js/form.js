@@ -57,7 +57,7 @@ function send(data) {
         dataType: "JSON",
         success: function (response) {
             console.log(response);
-            alert('感謝您的填寫');
+            alert('感謝您的登記，您將會於《天下》亞洲經濟大預測出刊當日搶先收到精華版！');
             $('body').removeClass('modal-open');
             $('.loading').fadeOut();
             $('.modal').fadeOut().removeClass('show');

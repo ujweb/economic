@@ -37,7 +37,7 @@ section {
 			line-height: 3rem;
 			border-bottom: 2px solid $yellow;
 		}
-		h2, .h3, h4, .h5, .h5 {
+		h2, .h3, h4, .h5, .h5, .h6 {
 			color: $white;
 		}
 		.h3 {
@@ -48,7 +48,7 @@ section {
 				font-size: 2.4rem;
 			}	
 		}
-		h2 + .h5 {
+		.opacity60 {
 			@include opacity(0.6);
 		}
 		.option {
