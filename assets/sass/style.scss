@@ -280,11 +280,11 @@ section {
 	font-size: 0;
 	.column {
 		vertical-align: bottom;
-		@include breakpoint(768px) {
+		@include breakpoint(1024px) {
 			display: inline-block;
 			width: 50%;
 		}
-		@include breakpoint(max-width 767px) {
+		@include breakpoint(max-width 1023px) {
 			+ .column {
 				margin-top: 60px;
 			}
