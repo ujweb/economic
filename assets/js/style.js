@@ -7,8 +7,8 @@ $(document).ready(function () {
 		$('body').toggleClass('modal-open');
 	});
 	$("nav a").click(function () {
-		$(".hamburger, nav").toggleClass("active");
-		$('body').toggleClass('modal-open');
+		$(".hamburger, nav").removeClass("active");
+		$('body').removeClass('modal-open');
 	});
 	// Smooth scrolling using jQuery easing
 	$('a.smooth-scroll[href*="#"]:not([href="#"])').click(function () {
