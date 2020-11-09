@@ -156,11 +156,11 @@ section {
 			color: $white;
 		}
 		.logo-list {
-			@include list(5px 0 0, 0, none);
+			@include list(0, 0, none);
 			font-size: 0;
 			li {
 				display: inline-block;
-				padding: 5px 10px;
+				padding: 10px;
 				img {
 					display: block;
 					height: 110px;
