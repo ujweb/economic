@@ -3,17 +3,17 @@ var keys = [
         "keys": "2021關鍵字",
         "img": "us-election.jpeg",
         "hashtag": ["強人政治", "美國大選", "永續"],
-        "apple": "#!apple",
-        "google": "#!google",
-        "article": "#!article"
+        "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803?i=1000497166002",
+        "google": "https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz&ep=14&episode=ODIzNzdmODItZjJlOS00ZTBlLWI5ZjgtMzc4NzlkYTdmZDRh",
+        "article": "https://web.cw.com.tw/us-2020/"
     },
     {
         "keys": "未來建築",
-        "img": "",
-        "hashtag": ["", "", ""],
-        "apple": "",
-        "google": "",
-        "article": ""
+        "img": "future-city.png",
+        "hashtag": ["環境", "永續", "本住建築"],
+        "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803#episodeGuid=2c513e1a-3dcb-4e67-869b-4639a32aa21e",
+        "google": "https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz&ep=14&episode=MmM1MTNlMWEtM2RjYi00ZTY3LTg2OWItNDYzOWEzMmFhMjFl",
+        "article": "https://www.cw.com.tw/article/5102512"
     },
     {
         "keys": "智慧聚落",
