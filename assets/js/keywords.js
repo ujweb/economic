@@ -1,5 +1,13 @@
 var keys = [
     {
+        "keys": "美中台關係",
+        "img": "us-china-tw.jpg",
+        "hashtag": ["美國大選", "中國", "產業變化"],
+        "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803?i=1000499129689",
+        "google": "https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz&ep=14&episode=N2NiYzBiODktNjUyZS00MWE5LTgwYjYtOWQ2MGQwY2I4YWU1",
+        "article": "https://www.cw.com.tw/article/5102768"
+    },
+    {
         "keys": "未來建築",
         "img": "future-city.png",
         "hashtag": ["環境", "永續", "本住建築"],
@@ -16,7 +24,7 @@ var keys = [
         "article": "https://web.cw.com.tw/us-2020/"
     },
     {
-        "keys": "智慧聚落",
+        "keys": "永續佈局",
         "img": "",
         "hashtag": "",
         "apple": "",
@@ -24,7 +32,7 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "水資源",
+        "keys": "智慧急診",
         "img": "",
         "hashtag": "",
         "apple": "",
@@ -40,7 +48,15 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "智慧運輸",
+        "keys": "場景革命",
+        "img": "",
+        "hashtag": "",
+        "apple": "",
+        "google": "",
+        "article": ""
+    },
+    {
+        "keys": "智慧聚落",
         "img": "",
         "hashtag": "",
         "apple": "",
@@ -56,6 +72,14 @@ var keys = [
         "article": ""
     },
     {
+        "keys": "重啟",
+        "img": "",
+        "hashtag": "",
+        "apple": "",
+        "google": "",
+        "article": ""
+    },
+    {
         "keys": "數位轉型",
         "img": "",
         "hashtag": "",
@@ -64,39 +88,7 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "智慧醫療",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
-    },
-    {
-        "keys": "顏值經濟",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
-    },
-    {
-        "keys": "宅經濟",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
-    },
-    {
-        "keys": "電動車",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
-    },
-    {
-        "keys": "數位金融",
+        "keys": "數位創新",
         "img": "",
         "hashtag": "",
         "apple": "",
