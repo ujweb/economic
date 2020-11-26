@@ -1,5 +1,13 @@
 var keys = [
     {
+        "keys": "永續佈局",
+        "img": "energy.jpg",
+        "hashtag": ["台商回流", "企業佈局", "渣打銀行"],
+        "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803?i=1000500181718",
+        "google": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz/episode/Y2ZhNGMxMjMtZTEzNy00ODE1LWE2NzQtM2ExMGQ1ODUyMDA0?sa=X&ved=0CAUQkfYCahcKEwiA--uKhZ_tAhUAAAAAHQAAAAAQAw",
+        "article": "https://www.cw.com.tw/article/5102892"
+    },
+    {
         "keys": "美中台關係",
         "img": "us-china-tw.jpg",
         "hashtag": ["美國大選", "中國", "產業變化"],
@@ -22,14 +30,6 @@ var keys = [
         "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803?i=1000497166002",
         "google": "https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz&ep=14&episode=ODIzNzdmODItZjJlOS00ZTBlLWI5ZjgtMzc4NzlkYTdmZDRh",
         "article": "https://web.cw.com.tw/us-2020/"
-    },
-    {
-        "keys": "永續佈局",
-        "img": "energy.jpg",
-        "hashtag": ["台商回流", "企業佈局", "渣打銀行"],
-        "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803?i=1000500181718",
-        "google": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz/episode/Y2ZhNGMxMjMtZTEzNy00ODE1LWE2NzQtM2ExMGQ1ODUyMDA0?sa=X&ved=0CAUQkfYCahcKEwiA--uKhZ_tAhUAAAAAHQAAAAAQAw",
-        "article": "https://www.cw.com.tw/article/5102892"
     },
     {
         "keys": "智慧急診",
