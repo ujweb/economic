@@ -1,5 +1,13 @@
 var keys = [
     {
+        "keys": "智慧急診",
+        "img": "smart-emergency.jpg",
+        "hashtag": ["智慧醫療", "急診室", "臺大人工智慧中心"],
+        "apple": "https://reurl.cc/Y6aAWx",
+        "google": "https://reurl.cc/Ez0921",
+        "article": "https://www.cw.com.tw/article/5102953"
+    },
+    {
         "keys": "永續佈局",
         "img": "energy.jpg",
         "hashtag": ["台商回流", "企業佈局", "渣打銀行"],
@@ -32,14 +40,6 @@ var keys = [
         "article": "https://web.cw.com.tw/us-2020/"
     },
     {
-        "keys": "智慧急診",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
-    },
-    {
         "keys": "低利對策",
         "img": "",
         "hashtag": "",
@@ -48,7 +48,7 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "場景革命",
+        "keys": "疫後K經濟",
         "img": "",
         "hashtag": "",
         "apple": "",
@@ -64,7 +64,7 @@ var keys = [
         "article": ""
     },
     {
-        "keys": "循環設計",
+        "keys": "未來人才",
         "img": "",
         "hashtag": "",
         "apple": "",
