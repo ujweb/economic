@@ -1,5 +1,13 @@
 var keys = [
     {
+        "keys": "疫後K經濟",
+        "img": "k-economic.jpg",
+        "hashtag": ["疫情過後", "結構重組", "經濟復甦"],
+        "apple": "https://reurl.cc/N6vZKQ",
+        "google": "https://reurl.cc/bRQnrv",
+        "article": "https://www.cw.com.tw/article/5100819"
+    },
+    {
         "keys": "低利對策",
         "img": "cheap-money.jpg",
         "hashtag": ["投資", "成長策略", "野村投信"],
@@ -46,14 +54,6 @@ var keys = [
         "apple": "https://podcasts.apple.com/tw/podcast/%E8%81%BD%E5%A4%A9%E4%B8%8B-%E5%A4%A9%E4%B8%8B%E9%9B%9C%E8%AA%8Cpodcast/id1486227803?i=1000497166002",
         "google": "https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9mYzk0ZmM4L3BvZGNhc3QvcnNz&ep=14&episode=ODIzNzdmODItZjJlOS00ZTBlLWI5ZjgtMzc4NzlkYTdmZDRh",
         "article": "https://web.cw.com.tw/us-2020/"
-    },
-    {
-        "keys": "疫後K經濟",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
     },
     {
         "keys": "智慧聚落",
