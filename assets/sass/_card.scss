@@ -24,6 +24,17 @@
 			}
 		}
 	}
+	&.card-group-4 {
+		@include breakpoint(768px) {
+			margin-left: -10px;
+			margin-right: -10px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card {
+			width: 25%;
+		}
+	}
 }
 .img-card-list {
 	display: grid;
@@ -99,6 +110,33 @@
 			display: table;
 			margin-left: auto;
 			margin-right: auto;
+		}
+	}
+}
+.img-card-grid {
+	font-size: 0;
+	@include breakpoint(max-width 767px) {
+		&.img-card-grid-pc {
+			display: none;
+		}
+	}
+	@include breakpoint(768px) {
+		&.img-card-grid-pc {
+			column-count: 3;
+			column-gap: 20px;
+		}
+		&.img-card-grid-mb {
+			display: none;
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+		@include breakpoint(768px) {
+			margin-bottom: 20px;
+			&.sp {
+				padding-top: 100px;
+			}
 		}
 	}
 }

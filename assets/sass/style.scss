@@ -311,3 +311,16 @@ section {
 		}
 	}
 }
+
+hr.my0 {
+	width: calc(100% - 40px);
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid $white;
+	border-width: 1px 0 0;
+	@include opacity(0.2);
+	@include breakpoint(1024px) {
+		display: none;
+	}
+}
