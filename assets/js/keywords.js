@@ -1,11 +1,19 @@
 var keys = [
     {
+        "keys": "未來人才",
+        "img": "future-edu.jpg",
+        "hashtag": ["108課綱", "教育現場", "教育部"],
+        "apple": "https://reurl.cc/XkvAvg",
+        "google": "https://reurl.cc/e8jMqK",
+        "article": ""
+    },
+    {
         "keys": "智慧聚落",
         "img": "settlement.jpg",
         "hashtag": ["台商回流", "產業升級", "經濟部工業局"],
         "apple": "https://reurl.cc/n0ev9v",
         "google": "https://reurl.cc/Xk7R7D",
-        "article": "https://www.cw.com.tw/article/5093529"
+        "article": "https://www.cw.com.tw/article/5100957"
     },
     {
         "keys": "疫後K經濟",
@@ -64,14 +72,6 @@ var keys = [
         "article": "https://web.cw.com.tw/us-2020/"
     },
     {
-        "keys": "未來人才",
-        "img": "",
-        "hashtag": "",
-        "apple": "",
-        "google": "",
-        "article": ""
-    },
-    {
         "keys": "重啟",
         "img": "",
         "hashtag": "",
@@ -109,13 +109,17 @@ for (var k = 0; k < keys.length; k++) {
         for (var m = 0; m < keys[k]["hashtag"].length; m++) {
             imgCard += '<li class="h6 font-weight-500 my0">#' + keys[k]["hashtag"][m] + '</li>';
         }
-        imgCard += '</ul><a href="';
-        imgCard += keys[k]["apple"];
-        imgCard += '" target="_blank" class="btn btn--white h6 mt10 mb0">Apple Podcast</a><a href="';
-        imgCard += keys[k]["google"];
-        imgCard += '" target="_blank" class="btn btn--white h6 mt10 mb0">Google Podcast</a><a href="';
-        imgCard += keys[k]["article"];
-        imgCard += '" target="_blank" class="btn btn--white h6 mt10 mb0">相關報導</a></div>';
+        imgCard += '</ul>';
+        if ( keys[k]["apple"] != '' ) {
+            imgCard += '<a href="' + keys[k]["apple"] + '" target="_blank" class="btn btn--white h6 mt10 mb0">Apple Podcast</a>';
+        }
+        if ( keys[k]["google"] != '' ) {
+            imgCard += '<a href="' + keys[k]["google"] + '" target="_blank" class="btn btn--white h6 mt10 mb0">Google Podcast</a>';
+        }
+        if ( keys[k]["article"] != '' ) {
+            imgCard += '<a href="' + keys[k]["article"] + '" target="_blank" class="btn btn--white h6 mt10 mb0">相關報導</a>';
+        }
+        imgCard += '</div>';
     } else {
         imgCard += '<div class="img-card text-center"><h3 class="my0">' + keys[k]["keys"] + '</h3>';
         imgCard += '<div class="h5 mt10 mb0">每週四更新<br/>敬請期待</div></div>';
